@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* Main Stylings */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../images/bg.png);
+  background-color: #111;
+}
+
+#slider-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#slider-image {
+  position: absolute;
+  top: 50%;
+  left: -50%; 
+  transform: translate(-50%, -50%);
+  height: 300px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+}
